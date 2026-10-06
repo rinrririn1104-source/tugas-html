@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa - Ririn</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e2e8f0 0%, #c7d2fe 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .card-header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .card-header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            background-color: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #6366f1;
+        }
+
+        .info-item.full-width {
+            grid-column: span 2;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .value {
+            font-size: 15px;
+            color: #1e293b;
+            font-weight: 500;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 4px;
+        }
+
+        .tag {
+            background-color: #e0e7ff;
+            color: #4338ca;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .bio-box {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-radius: 8px;
+            color: #334155;
+            font-size: 14px;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        @media (max-width: 480px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .info-item.full-width {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Header Kartu -->
+        <div class="card-header">
+            <h1>Ririn</h1>
+            <p>Teknik Informatika — Kelas A</p>
+        </div>
+
+        <!-- Isi Kartu -->
+        <div class="card-body">
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">NIM</span>
+                    <div class="value">2025511010</div>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">No. Handphone</span>
+                    <div class="value">081234567899</div>
+                </div>
+
+                <div class="info-item full-width">
+                    <span class="label">Alamat</span>
+                    <div class="value">Matakali</div>
+                </div>
+
+                <div class="info-item full-width">
+                    <span class="label">Hobi</span>
+                    <div class="tags">
+                        <span class="tag">Volly</span>
+                        <span class="tag">Menari</span>
+                    </div>
+                </div>
+
+                <div class="info-item full-width">
+                    <span class="label">Keahlian</span>
+                    <div class="value">Spesialis pemula, pengalaman masih dalam proses pengumpulan</div>
+                </div>
+            </div>
+
+            <!-- Deskripsi Diri -->
+            <div>
+                <span class="section-title">Deskripsi Diri</span>
+                <div class="bio-box">
+                    "Saya orangnya cukup unik, kadang baik dan perhatian, kadang juga gampang kesal tergantung situasi dan suasana hati. Saya sedikit keras kepala dan suka diperhatikan, mungkin karena saya Leo. Tapi saya sebenarnya cukup peduli dengan orang terdekat dan selalu berusaha belajar menjadi lebih baik."
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+</body>
+</html>
